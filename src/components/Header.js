@@ -18,12 +18,13 @@ const Header = () => {
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
-            <NavbarBrand  className= 'ms-5' href='/'>
+            <NavbarBrand  className='ms-5' href='/'>
                 <img src={NucampLogo} alt='nucamp logo' className='float-start'/>
                 <h1 className='mt-1'>NuCamp</h1>
             </NavbarBrand>
 
             <NavbarToggler onClick ={() => setMenuOpen(!menuOpen)}/>
+            
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className = 'ms-auto'navbar>
                     <NavItem>
